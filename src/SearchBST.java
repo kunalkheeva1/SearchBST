@@ -27,6 +27,31 @@ public class SearchBST {
         }// we could return null too but for the clarity purposes will return current
         return current;
     }
+    /* This will be the other way to do the program , it is a recursive program
+    static Node searchBST(Node root, int target){
+    if(root== null){
+    return null;
+    }
+
+    Node current = root;
+    if(root.val > target){
+    current = searchBST(current.left, target);
+    }
+    else if(root.val <target){
+    current = searchBST(current.right, target);
+    }
+    else if(current.val == target){
+    current = root;
+    }
+
+  return current;
+
+    }
+
+
+     */
+
+
 
 
 
