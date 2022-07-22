@@ -10,7 +10,20 @@ public class SearchBST {
          this.right = right;
         }
     }
-    
+    static Node searchBST(Node root, int target){
+        if(root == null) return null;
+
+        Node current = root;
+        while(current != null){
+            if(current.val > target){
+                current = current.left;
+            }else if(current.val <target){
+                current = current.left;
+            }else if(current.val == target){
+                current = root;
+            }
+        }return current;
+    }
 
 
 
